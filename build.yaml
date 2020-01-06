@@ -1,0 +1,12 @@
+command: go build
+file: hotrun.go
+permission: +x
+# path & new file name
+# output: /usr/bin/hotrun
+# output: D:\Windows\tools
+output: 
+run_output: false
+# execute after build
+# execute: mv build /tmp/ && mv /tmp/build /tmp/aaa
+# execute : 
+execute: cmd /c move hotrun.exe D:\Windows\tools\hotrun.exe
